@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+p{
+    color: rgb(197, 197, 197);
+}
+img{
+    border-radius: 50%;
+    border: 1px solid #fff;
+   
+}
+
+.div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.Daniel-Clifford
+{
+    grid-area: Daniel ;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Jonathan-Walters{
+    grid-area: Jonathan;
+    background-color: rgb(49, 52, 69);
+    color: #fff;
+    padding: 20px;
+        border-radius: 10px;
+
+}
+.Jeanette-Harmon{
+    grid-area: Jeanette;
+     background-color:white;
+    color: black;
+    padding: 20px;
+        border-radius: 10px;
+
+}
+.Jeanette-Harmon p{
+    color: gray;
+}
+.Patrick-Abrams{
+    grid-area: Patrick;
+     background-color: rgb(34, 35, 44);
+    color: #fff;
+    padding: 20px;
+        border-radius: 10px;
+
+}
+.Kira-Whittle{
+    grid-area: Kira;
+background-color:white;
+    color: black;
+    padding: 20px;
+        border-radius: 10px;
+
+}
+.Kira-Whittle p
+{
+    color: gray;
+}
+.container{
+    max-width: 1100px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , auto);
+    grid-template-areas:'Daniel Daniel Jonathan Kira'
+                        'Jeanette Patrick Patrick Kira' ;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 'Daniel'
+                             'Jonathan'
+                             'Jeanette'
+                             'Patrick'
+                             'Kira';
+    }
+}
